@@ -29,7 +29,7 @@ class ShortUrlController extends Controller
         $validated['short_url'] = 'su' . $validated['short_url'];
         $model = ShortUrl::create($validated);
 
-        $message = 'Вашая ссылка: <span class="text-danger">' . url($model->short_url) . '</span>';
+        $message = 'Ваша ссылка: <span class="text-danger">' . url($model->short_url) . '</span>';
         if ($model->date_expire) {
             $message .= ' до ' . $model->date_expire;
         }
