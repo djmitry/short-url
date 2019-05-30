@@ -14,8 +14,8 @@ DB_PASSWORD=
 
 Выполнить команды (из папки short-url.loc) в консоли composer
 ```bash
-$ php artisan migrate
-$ php artisan serve
+php artisan migrate
+php artisan serve
 ```
 
 Сервер запустится на http://127.0.0.1:8000
